@@ -1,0 +1,33 @@
+(function (window, $) {
+
+	$(document).ready(function(){
+
+		var window_height 	= $(window).height();
+
+		if( $('#wpadminbar').length ) {
+			var admin_bar_height = $('#wpadminbar').height();
+
+			window_height = window_height - admin_bar_height;
+
+		}
+
+		// if a Post or Page has a featured image, set the height
+		// of image to height of the browser window
+		if( $('body').hasClass('has-featured-image') ){
+			$('header.has-featured-image').css({
+				'height' : window_height,
+			});
+		}
+
+		$('.close-menu-area,.menu-button,.header-menu-close').on( 'click', function(){
+			$('body').toggleClass('menu-open');
+		});
+
+		$('#slider').flexslider({
+			prevText    : '<span aria-hidden="true" class="genericon genericon-expand"></span>',
+			nextText    : '<span aria-hidden="true" class="genericon genericon-collapse"></span>',
+			controlNav  : false,
+		});
+	});
+
+})(window, jQuery);
