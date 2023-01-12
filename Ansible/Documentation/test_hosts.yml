@@ -1,0 +1,7 @@
+---
+- name: test-hosts
+  hosts: all
+  tasks:
+    - name: print variable
+      ansible.builtin.debug:
+        var: name 
