@@ -34,3 +34,22 @@
 * Removing Changes from staging area to Working Tree `git restore --staged <file name>` ![Image](./Images/git4.png)
 
     * [refer here](https://git-scm.com/docs/git-restore) for more info about git restore 
+    * `git cat-file <commit id> -t` shows the type
+    * `git cat-file <commit id> -p` shows the content ![Image](./Images/git5.png)
+    * Git has following object types
+        
+        * tree => folder
+        * blob => file
+        * commit
+* github ssh key authentication  [refer here](https://directdevops.blog/2022/09/13/devops-classroomnotes-13-sep-2022/)
+* Remote repository connection can be added to your local repository `git remote add <name-of-remote> <remote-url>`
+
+    * The default remote name used is `origin`
+    * Now we need to push the changes `git push <remote-name> <branch-name>` is the command to push
+    ![Image](./Images/git6.png)
+* To see the graph `git log --oneline --graph --all/decorate`
+* The `git commit --amend` command is a convenient way to modify the most recent commit
+
+    * It lets you combine staged changes with the previous commit instead of creating an entirely new commit.
+    * It can also be used to simply edit the previous commit message without changing its snapshot.
+* To rewrite history we need to back by 2 commits and rewrite history `git rebase -i HEAD~2`. This is called as interactive rebase.
