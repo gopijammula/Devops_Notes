@@ -53,3 +53,8 @@
     * It lets you combine staged changes with the previous commit instead of creating an entirely new commit.
     * It can also be used to simply edit the previous commit message without changing its snapshot.
 * To rewrite history we need to back by 2 commits and rewrite history `git rebase -i HEAD~2`. This is called as interactive rebase.
+* recover a deleted commit [refer here](https://directdevops.blog/2022/09/17/devops-classroomnotes-17-sep-2022/) 
+
+    * exec git reflog
+    * note the commit id you want to recover
+    * and execute git cherry-pick <commit id>
