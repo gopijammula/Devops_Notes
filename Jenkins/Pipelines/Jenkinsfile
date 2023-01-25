@@ -26,7 +26,7 @@ pipeline {
         stage ('k8s'){
             steps{
                 git url: 'https://github.com/gopijammula/Devops_Notes.git',branch: 'main'
-                sh 'cd '
+                sh 'cd k8s/manifests'
                 sh 'az aks get-credentials --resource-group gopiterraformcluster --name gopi-aks1'
                 sh 'kubectl apply -f spc-deploy.yml'
             }
