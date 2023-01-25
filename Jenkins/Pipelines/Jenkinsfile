@@ -17,7 +17,18 @@ pipeline {
         }
         stage ('terraform') {
             steps{
-                
+                git url: 'https://github.com/gopijammula/Devops_Notes.git',branch: 'main'
+                sh 'cd Terraform/Templates/aks-cluster'
+                sh 'terraform init'
+                sh 'terraform apply -auto-approve'
+            }
+        }
+        stage ('k8s'){
+            steps{
+                git url: 'https://github.com/gopijammula/Devops_Notes.git',branch: 'main'
+                sh 'cd '
+                sh 'az aks get-credentials --resource-group gopiterraformcluster --name gopi-aks1'
+                sh 'kubectl apply -f spc-deploy.yml'
             }
         }
     }
