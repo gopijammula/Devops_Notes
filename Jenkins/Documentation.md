@@ -1,6 +1,6 @@
 # Jenkins
 
-        Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
+ Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
 * Jenkins is a CI/CD engine used to create pipelines
 * Jenkins is developed in JAVA language, so jenkins requires JAVA installation on the servers.
@@ -58,3 +58,16 @@
         }
     }
     }
+## Jenkins Parameters
+* Jenkins Parameters helps in getting additional information during the build. User can pass options
+* [refer here](https://www.jenkins.io/doc/book/pipeline/syntax/#parameters-example) for official docs/example usage 
+* [refer here](https://directdevops.blog/2022/09/27/devops-classroomnotes-27-sep-2022/) for the class room notes
+* the following are the available parameters
+
+    * string
+    * text
+    * booleanParam
+    * choice
+    * password
+*  [refer here](https://github.com/GitPracticeRepo/spring-petclinic/commit/aa9c7d0b5ddbb27efc680c69a339ab8d3253fe4d) for parameters usage in class room notes
+### [refer here](https://directdevops.blog/2022/09/27/devops-classroomnotes-27-sep-2022/) for triggers in jenkins and Email notifications

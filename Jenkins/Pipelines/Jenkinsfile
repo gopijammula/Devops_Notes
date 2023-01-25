@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage ('vcs') {
+            steps {
+                git url: 'https://github.com/gopijammula/MySpringPetclinicClone.git'
+                branch: 'main'
+            }
+        }
+        stage ('docker image build&push') {
+            steps{
+                git url: 'https://github.com/gopijammula/Docker_images.git',branch:'main'
+                sh 'docker image build -t gopispc:1.0 -f Dockerfile.spcmultistage'
+                sh 'docker image tag gopispc0117:1.0 gopijammula1234/gopispc0117:1.0'
+                sh 'docker image push gopijammula1234/gopispc0117:1.0'
+            }
+        }
+        stage ('terraform') {
+            steps{
+                
+            }
+        }
+    }
+}

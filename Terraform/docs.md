@@ -1,0 +1,5 @@
+# Terraform
+  Terraform is an open-source infrastructure as code software tool created by HashiCorp. It allows users to define and provision infrastructure for cloud providers such as AWS, Azure, and Google Cloud, as well as on-premises environments using a simple, human-readable language called HashiCorp Configuration Language (HCL)
+  * Terraform enables users to provision and manage infrastructure automatically, making it an important tool for automating infrastructure deployment and management tasks
+  * It can also be used in conjunction with other HashiCorp tools such as Packer and Vault to create a complete workflow for infrastructure provisioning, configuration management, and secret management.
+  * Terraform uses a configuration file written in the HashiCorp Configuration Language (HCL) to define infrastructure as code, which can then be used to create, update, and destroy resources. This allows for versioning, testing, and collaboration on infrastructure changes.
