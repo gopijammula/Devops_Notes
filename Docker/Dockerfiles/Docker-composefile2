@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  nginx:
+    image: nginx
+    ports:
+        - target: 80
+          published: 8080
+          mode: host
+    networks:
+      - test
+  mysql: 
+    networks:
+      - test
+    image: mysql
+    environment:
+       - MYSQL_ROOT_PASSWORD=password
+       - MYSQL_DATABASE=test
+       - MYSQL_USER=testuser
+       - MYSQL_PASSWORD=test@12345
+    volumes:
+      - type: volume
+        source: test-volume
+        target: /var/lib/mysql
+volumes:
+  test-volume:
+networks:
+  test:
+    driver: bridge
+    ipam: 
+      config:
+        - subnet: 192.168.100.0/24

@@ -57,4 +57,4 @@
 
     * exec git reflog
     * note the commit id you want to recover
-    * and execute git cherry-pick <commit id>
+    * and execute git cherry-pick commit-id

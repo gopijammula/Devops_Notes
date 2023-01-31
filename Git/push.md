@@ -1,0 +1,2 @@
+Uploading your local changes to a remote repository (such as Github). This allows others to access and review your code. To push your changes, use the command "git push origin [branch-name]". Replace "[branch-name]" with the name of the branch you want to update on the remote repository.
+* Before you can push, you need to make sure that you have committed your changes locally and that your local branch is up-to-date with the remote branch you're pushing to.
