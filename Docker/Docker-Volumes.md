@@ -1,0 +1,3 @@
+Docker volumes are a way to store data outside of a Docker container's filesystem. They allow data to persist even if the container is deleted, and can be used to share data between containers. Volumes can be created and managed using the `docker volume` command.
+* [refer here](https://github.com/rajnikanth1999/cloud/blob/main/DevOps/Docker/volumes.md) for more info
+* [refer here](https://directdevops.blog/2022/11/22/devops-classroomnotes-22-nov-2022/) for class room notes

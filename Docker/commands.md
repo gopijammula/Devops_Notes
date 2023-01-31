@@ -16,4 +16,30 @@
 * To tag image name
 
         `docker image tag <container id> name`
- 
+* To see the container running in the docker host
+
+        docker container ls
+* to see the status of all the containers created by docker host which are not deleted
+
+        docker container ls --all
+* to know the cpu/RAM utilization
+
+        docker stats
+* to run the container in the background mode (detached mode) we use -d and -p for port forwording
+
+        docker container run -p 8081:80 -it ubuntu:22.04 /bin/bash
+* To access the application
+
+         http://<ip of docker host>:<port>
+* create a docker image from running container in the docker host
+  * This approach creates images but no history of changes are available.
+
+        docker commit <container-name/id>
+        
+* to pass environment variables
+
+        docker container run -e "TEST=hai" <image>
+* To run Docker-compose file
+
+        docker compose up -d
+* 
