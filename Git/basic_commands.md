@@ -58,3 +58,10 @@
     * exec git reflog
     * note the commit id you want to recover
     * and execute git cherry-pick commit-id
+* To see a list of all the branches in the remote repository
+
+         git branch -r
+* To merge the master branch from the remote repository into your local repository, run the following command:
+
+        git merge origin/master
+* 
