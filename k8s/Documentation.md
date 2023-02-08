@@ -5,6 +5,7 @@
 * yaml files where we describe our desired state are called as manifests
 ## k8s Architecture
 * ![Image](./Images/k8s1.png)
+* kubectl: A command-line tool that allows you to interact with the API server to manage your cluster.
 
 ### difference between replication controller and replicaset 
 ![Image](./Images/k8s2.png)
