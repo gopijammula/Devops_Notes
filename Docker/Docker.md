@@ -29,11 +29,15 @@ Docker is an open source platform for developing shipping and runnig application
 
 ## Docker objects
 => The following are the major Docker objects 
+* Dockerfile
 * images
 * containers
 * networks
 * volumes 
 * plugins
+
+### Dockerfile :
+A Dockerfile is a script that contains instructions for building a Docker image. It is a text file that specifies the base image, configuration options, and commands to run when creating the image.
 
 ### Images : 
 * An image is a read only template with instructions for creating docker container
@@ -48,4 +52,17 @@ Docker is an open source platform for developing shipping and runnig application
      * CPU
      * RAM
 
-     
+## Docker swarm:
+Docker Swarm is a native orchestration solution for Docker containers. It allows you to manage multiple Docker nodes as a single virtual system, making it easier to deploy, scale, and manage containers. With Docker Swarm, you can easily create a swarm, add nodes to it, and deploy services across the swarm.
+
+Some key features of Docker Swarm include:
+
+* Decentralized architecture: Docker Swarm allows you to distribute your application across multiple nodes, making it more resilient and scalable.
+
+* Easy setup: Docker Swarm is easy to set up and get started with, making it a great option for small to medium-sized deployments.
+
+* Load balancing: Docker Swarm includes built-in load balancing, allowing you to distribute incoming traffic across multiple nodes in your swarm.
+
+* Rolling updates: Docker Swarm makes it easy to perform rolling updates to your applications, allowing you to update your applications without downtime.
+
+* Multi-host networking: Docker Swarm supports multi-host networking, making it easier to connect containers across multiple nodes in your swarm.
