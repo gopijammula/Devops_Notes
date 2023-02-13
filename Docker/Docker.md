@@ -17,6 +17,22 @@ Docker is an open source platform for developing shipping and runnig application
 * The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. 
 * A daemon can also communicate with other daemons to manage Docker services.
 
+                         (or)
+
+The Docker daemon is the core component of the Docker platform that is responsible for building, running, and managing Docker containers. The Docker daemon is a background process that runs on the host system and communicates with the Docker client to execute commands and manage containers.
+
+The Docker daemon is responsible for several tasks, including:
+
+* Building images: The Docker daemon receives instructions from the Docker client to build images from Dockerfiles. The Docker daemon downloads necessary components, executes commands, and creates a new image that can be used to start containers.
+
+* Running containers: The Docker daemon receives instructions from the Docker client to start, stop, and manage containers. The Docker daemon allocates resources, starts containers, and manages the containers' lifecycle.
+
+* Networking: The Docker daemon is responsible for networking between containers and between the containers and the host system. The Docker daemon creates and manages networks, assigns IP addresses, and routes traffic between containers and the host system.
+
+* Storage: The Docker daemon is responsible for managing the storage used by containers and images. The Docker daemon creates and manages volumes, mounts and unmounts volumes, and manages the storage used by containers.
+
+The Docker daemon is an important component of the Docker platform and is responsible for many of the key features that make Docker containers so useful for application development and deployment.
+
 ### Docker Client
 * The Docker client (docker) is the primary way that many Docker users interact with Docker. 
 * When you use commands such as docker run, the client sends these commands to docker daemon, which carries them out. The docker command uses the Docker API. 
