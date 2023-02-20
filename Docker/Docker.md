@@ -16,8 +16,8 @@ Docker is an open source platform for developing shipping and runnig application
 ### Docker daemon
 * The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. 
 * A daemon can also communicate with other daemons to manage Docker services.
-
-                         (or)
+  
+ (or)
 
 The Docker daemon is the core component of the Docker platform that is responsible for building, running, and managing Docker containers. The Docker daemon is a background process that runs on the host system and communicates with the Docker client to execute commands and manage containers.
 

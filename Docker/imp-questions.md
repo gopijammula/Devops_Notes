@@ -1,5 +1,5 @@
 ## explain the architecture of Docker?
-es, of course! The architecture of Docker can be divided into the following components:
+The architecture of Docker can be divided into the following components:
 
 * Docker Daemon: This is the core component of Docker and is responsible for building, running, and managing containers. It communicates with the Docker client and Docker registry to manage the containers.
 
@@ -51,12 +51,13 @@ Write the Dockerfile: A Dockerfile contains instructions for building the image.
 
 Build the image: To build the image, you need to run the docker build command. The command should include the path to the Dockerfile and a tag for the image. For example:
 
-docker build -t myimage:v1 .
+    docker build -t myimage:v1 .
+
 Verify the image: You can verify that the image was built successfully by running the docker images command, which will show a list of all available images. The new image should be in the list with the tag you specified in step 2.
 
 Run a container from the image: To run a container from the image, you can use the docker run command. For example:
 
-docker run -it myimage:v1 /bin/bash
+    docker run -it myimage:v1 /bin/bash
 And that's it! The above steps are the basics of creating a Docker image from a Dockerfile. With the Dockerfile, you can automate the process of creating the image, making it easier to build, test, and deploy your applications.
 
 ## How do you manage Docker containers?
@@ -64,7 +65,9 @@ There are several ways to manage Docker containers, including the following:
 
 * docker run command: This is the most basic way to start a new container. The docker run command allows you to specify the image to use, the command to run, and various other options, such as port mapping and resource constraints.
 
-* docker start, docker stop, and docker restart commands: These commands allow you to start, stop, and restart existing containers. For example, to stop a container, you can run docker stop <container_name>.
+* docker start, docker stop, and docker restart commands: These commands allow you to start, stop, and restart existing containers. For example, to stop a container, you can run 
+  
+        docker stop <container_name>.
 
 * docker ps command: This command allows you to view a list of running containers and their status. You can also use this command to view the ports that are exposed by each container and the names of the containers.
 
@@ -166,7 +169,7 @@ The docker save command is used to export a Docker image as an archive. The arch
 Here's the basic syntax for using docker save:
 
     `docker save [OPTIONS] IMAGE [IMAGE...]`
-
+ 
 For example, to export an image named "myimage" to a file named "myimage.tar", you would run the following command:
 
     `docker save myimage > myimage.tar`
