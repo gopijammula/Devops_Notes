@@ -109,6 +109,7 @@ In summary, Docker networks are used to provide a flexible and configurable netw
 
 ## What is the difference between Docker Compose and Docker Swarm?
 Docker Compose and Docker Swarm are both tools for managing multiple Docker containers, but they serve different purposes and have different features:
+![Image](./Images/docker1.png)
 
 * Purpose: Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to define the services that make up your application, along with the network and volumes they need, in a single file called a "compose file". With a single command, you can start all the services defined in the compose file, as well as any linked networks and volumes.
 Docker Swarm, on the other hand, is a native clustering and orchestration solution for Docker. It allows you to turn a group of Docker nodes into a single, virtual host, making it easy to deploy, manage, and scale applications across multiple nodes.
