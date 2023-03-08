@@ -1,0 +1,20 @@
+---
+pool:
+  name: "Agent_Gopi"
+  vmImage: 'ubuntu-latest'
+trigger:
+  - main
+resources:
+  repositories:
+    - repository: 'imagerepo'
+      name: 'gopijammula/Docker_images'
+      endpoint: 'github.com_gopijammula'
+      type: 'github'
+      ref: 'refs/heads/main'
+steps: 
+   - task: Docker@2
+     inputs: 
+      command: 'buildAndPush'
+      containerRegistry: 'Gopi_Docker'
+      repository: 'gopijammula/MySpringPetclinicClone'
+      tags: 'gopi12'

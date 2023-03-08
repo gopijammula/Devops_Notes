@@ -79,5 +79,39 @@ Azure Test Plans can be used to:
 
 In summary, Azure Test Plans is a comprehensive testing solution that enables teams to plan, track, and test their applications effectively. It provides tools for manual and automated testing, test case management, and reporting, helping teams ensure high-quality software releases.
 
+----
+## Variables:
+In Azure DevOps, variables can be used to define values that can be reused throughout the pipeline. They can be used to store data such as connection strings, passwords, and environment settings. Here are some ways variables can be used in Azure DevOps:
+
+* Pipeline variables: These variables are defined at the pipeline level and can be used in all stages of the pipeline. Pipeline variables can be defined using the YAML syntax, or through the Azure DevOps UI.
+
+* Environment variables: These variables are used to define environment-specific settings. They are defined at the environment level and can be used in all stages of the pipeline that are associated with that environment.
+
+* Variable groups: Variable groups allow you to define a set of variables that can be reused across multiple pipelines. This makes it easy to manage common variables across your organization.
+
+* Secret variables: Secret variables are used to store sensitive data such as passwords and access tokens. They are encrypted when stored and can be used in the pipeline without exposing their values.
+
+Overall, variables provide a convenient way to manage and reuse data across your pipeline in Azure DevOps.
+
+---
+## Parameters:
+In Azure DevOps, parameters are used to pass runtime values to a pipeline. They allow you to make your pipeline more flexible and reusable by allowing you to modify pipeline behavior without having to modify the pipeline itself. Here are some ways parameters can be used in Azure DevOps:
+
+* Pipeline parameters: These parameters are defined at the pipeline level and can be used in all stages of the pipeline. Pipeline parameters can be defined using the YAML syntax, or through the Azure DevOps UI.
+
+* Environment parameters: These parameters are used to define environment-specific settings. They are defined at the environment level and can be used in all stages of the pipeline that are associated with that environment.
+
+* Runtime parameters: These parameters are used to pass values to a pipeline when it is triggered. They can be specified through the Azure DevOps UI or through the API.
+
+* Template parameters: If you're using YAML pipelines, you can also define parameters in a separate template file that can be reused across multiple pipelines.
+
+Overall, parameters provide a powerful way to make your pipelines more flexible and reusable in Azure DevOps. They allow you to easily modify pipeline behavior at runtime without having to modify the pipeline itself, and can be used to share common settings across multiple pipelines.
+
+----
+
+
+
+
 ## Difference between continuous delivery and continuous deployment ?
 ![Image](./Images/azdevops2.png)
+

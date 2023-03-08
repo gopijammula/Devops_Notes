@@ -25,4 +25,24 @@
 
       curl http://<service name>:port
 
+* To Apply a Kubernetes configuration file to a running cluster
 
+      kubectl apply -f <`yaml file name`>
+
+* To continuously monitor changes to resources in the cluster.
+
+      kubectl get pods -w
+
+* To describe the pod details
+  * Some of the information provided by the kubectl describe pods command includes:
+ 
+  * Pod state: The current state of the pod, including whether it is running, pending, or terminated.
+  * Containers: Details about the containers running inside the pod, including their image, command, and ports.
+  * Volumes: Information about the volumes mounted inside the pod, including their type and mount paths.
+  * Networking: Information about the network configuration of the pod, including its IP address, service name, and network policies.
+
+             kubectl describe pods <pod-name>
+
+* To retrieves the YAML representation of the pod
+
+      kubectl get pods <pod name> -o yaml
