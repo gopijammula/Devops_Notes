@@ -71,6 +71,15 @@ There are several ways to manage Docker containers, including the following:
 
 * docker ps command: This command allows you to view a list of running containers and their status. You can also use this command to view the ports that are exposed by each container and the names of the containers.
 
+        docker ps                      # List currently running containers
+        docker ps -a                   # List all containers (running and stopped)
+        docker ps -q                   # List only the container IDs
+        docker ps -n 3                 # List only the last 3 containers that were started
+        docker ps -f status=exited     # List all containers that have exited
+        docker ps -f "name=web*"       # List all containers with names starting with "web"
+        docker ps -f "label=version=1.0" # List all containers with a "version" label set to "1.0"
+
+
 * docker logs command: This command allows you to view the logs of a container, which can be useful for debugging and troubleshooting.
 
 * docker inspect command: This command allows you to inspect a container and retrieve information about its configuration, including its network settings, volume mounts, and environment variables.
